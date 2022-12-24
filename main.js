@@ -4,8 +4,6 @@ import { ICON_MAP } from "./iconMap"
 
 navigator.geolocation.getCurrentPosition(positionSuccess, positionError)
 
-let locationData = {}
-
 function positionSuccess({ coords }) {
 	getWeather(
 		coords.latitude,
